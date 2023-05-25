@@ -8,4 +8,11 @@ echo installing dependencies for dotfiles configuration
 echo please run in sudo
 echo beginning instalations
 
-sudo pacman -Syu
+#installation list
+sudo pacman -Syu -y
+sudo pacman -S zsh -y
+sudo cp -r /home/aman/Git/Dotfile/.config/ ~/
+sudo pacman -S rustup -y  #eww dependencies
+sudo pacman -S cargo -y   #eww dependencies
+rustup default nightly -y #sets dependecies for eww configuration
+sudo pacman -S
